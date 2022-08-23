@@ -55,7 +55,7 @@ header li:last-child{
     margin-right: 0;
 }
 
-.active, header li:hover{
+header li:hover{
     background-color: #FCC96D;
 }
 header li:hover a {
@@ -68,6 +68,11 @@ header a {
     font-size: 20px;
     text-transform: capitalize;
     color: #383838;
+}
+
+.active{
+    background-color: #FCC96D;
+    color: #FFFFFF;
 }
 
 /* change cursor color when hovering header */
