@@ -1,0 +1,77 @@
+/* font declaration */
+@font-face {
+    font-family: 'Neue-Helvetica-Heavy';
+    src: url(/fonts/Helvetica-Font/Helvetica\ Neue\ LT\ 83\ Heavy\ Extended.ttf);
+  }
+  @font-face {
+    font-family: 'Neue-Helvetica-Medium';
+    src: url(/fonts/Helvetica-Font/Helvetica-Neue-LT-75-Bold.ttf);
+  }
+
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+/* header/navbar */
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    padding: 15px 130px 0 130px;    
+}
+
+/* styling Rahul G. */
+.nav-title, .nav-title span, .nav-title span span{
+    margin-right: auto;
+    font-size: 2.25rem;
+    font-weight: 800;
+    font-family: Neue-Helvetica-Heavy;
+}
+/* styling navbar content */
+header ul{
+    background: #FCC96D61 38%;
+    backdrop-filter: blur(70px);
+    border-radius: 38px;
+    padding: 0px;
+    width: fit-content;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px 32px;
+    border-radius: 38px; 
+    margin-right: 20px;
+    transition: all 0.5s ease-in-out;    
+}
+
+header li:last-child{
+    margin-right: 0;
+}
+
+.active, header li:hover{
+    background-color: #FCC96D;
+}
+header li:hover a {
+    color: #FFFFFF;
+}
+
+header a {
+    text-decoration: none;
+    font-family: Neue-Helvetica-Medium;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #383838;
+}
+
+/* change cursor color when hovering header */
+/* header:hover{
+    cursor: url(image.png);
+} */
+
