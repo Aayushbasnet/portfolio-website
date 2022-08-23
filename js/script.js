@@ -15,3 +15,19 @@ liLists.forEach(liList => {
         // console.log(liList);
     });
 });
+
+// Responsive bar toggle
+function toggleNavbarMenu(){
+    var barBtn = document.querySelector('i');
+    console.log(barBtn);
+    if(barBtn.classList.contains("fa-bars")){
+        barBtn.classList.remove("fa","fa-bars");
+        barBtn.classList.add("fa-solid", "fa-xmark");
+        document.querySelector(".headerUl").style.display = "block";
+    }
+    else{
+        barBtn.classList.remove("fa-solid", "fa-xmark");
+        barBtn.classList.add("fa","fa-bars");
+        document.querySelector(".headerUl").style.display = "none";
+    }
+};
